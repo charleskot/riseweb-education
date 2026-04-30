@@ -14,6 +14,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   const t = COPIES[params.locale];
   const url = params.locale === 'es' ? 'https://werise.education/' : 'https://werise.education/en';
   return {
+    metadataBase: new URL('https://werise.education'),
     title: t.meta.title,
     description: t.meta.description,
     alternates: {
