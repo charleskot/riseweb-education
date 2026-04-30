@@ -27,7 +27,7 @@ export default function HowWeWork({ t }: { t: Copy }) {
               >
                 <div
                   className={`text-5xl font-black ${
-                    isMiddle ? 'text-wr-lime' : 'text-wr-white/30'
+                    isMiddle ? 'text-wr-lime' : 'text-wr-white/60'
                   }`}
                 >
                   {level.number}

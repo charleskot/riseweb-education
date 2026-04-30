@@ -77,11 +77,6 @@ export default function Cases({ t, locale }: { t: Copy; locale: Locale }) {
                     ? 'hover:border-wr-lime cursor-pointer'
                     : 'opacity-60 cursor-not-allowed'
                 }`}
-                aria-label={
-                  clickable
-                    ? `${content.client}${locale === 'es' ? ' — leer caso' : ' — read case study'}`
-                    : `${content.client} — ${t.cases.cambraComing}`
-                }
               >
                 <div className="flex h-16 w-32 items-center justify-center rounded-md bg-white/95 px-4">
                   <Image
