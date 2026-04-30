@@ -1,6 +1,7 @@
 import Hero from '@/components/home/Hero';
 import LogoMarquee from '@/components/home/LogoMarquee';
 import Problem from '@/components/home/Problem';
+import HowWeWork from '@/components/home/HowWeWork';
 import { isLocale } from '@/lib/i18n/config';
 import { es, type Copy } from '@/lib/i18n/es';
 import { en } from '@/lib/i18n/en';
@@ -16,6 +17,7 @@ export default function Page({ params }: { params: { locale: string } }) {
       <Hero t={t} />
       <LogoMarquee />
       <Problem t={t} />
+      <HowWeWork t={t} />
     </>
   );
 }
