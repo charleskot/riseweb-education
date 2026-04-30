@@ -6,6 +6,7 @@ import Cases from '@/components/home/Cases';
 import Results from '@/components/home/Results';
 import WhyUs from '@/components/home/WhyUs';
 import Technology from '@/components/home/Technology';
+import WeRiseGroup from '@/components/home/WeRiseGroup';
 import { isLocale, type Locale } from '@/lib/i18n/config';
 import { es, type Copy } from '@/lib/i18n/es';
 import { en } from '@/lib/i18n/en';
@@ -26,6 +27,7 @@ export default function Page({ params }: { params: { locale: string } }) {
       <Results t={t} />
       <WhyUs t={t} />
       <Technology t={t} />
+      <WeRiseGroup t={t} />
     </>
   );
 }
