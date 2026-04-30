@@ -5,6 +5,7 @@ import HowWeWork from '@/components/home/HowWeWork';
 import Cases from '@/components/home/Cases';
 import Results from '@/components/home/Results';
 import WhyUs from '@/components/home/WhyUs';
+import Technology from '@/components/home/Technology';
 import { isLocale, type Locale } from '@/lib/i18n/config';
 import { es, type Copy } from '@/lib/i18n/es';
 import { en } from '@/lib/i18n/en';
@@ -24,6 +25,7 @@ export default function Page({ params }: { params: { locale: string } }) {
       <Cases t={t} locale={params.locale as Locale} />
       <Results t={t} />
       <WhyUs t={t} />
+      <Technology t={t} />
     </>
   );
 }
