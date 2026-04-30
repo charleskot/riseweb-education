@@ -1,8 +1,10 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { isLocale } from '@/lib/i18n/config';
-import { es } from '@/lib/i18n/es';
+import { es, type Copy } from '@/lib/i18n/es';
 import { en } from '@/lib/i18n/en';
+import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
 import '../globals.css';
 
 const COPIES = { es, en } as const;
@@ -28,9 +30,14 @@ export default function LocaleLayout({
   params: { locale: string };
 }) {
   if (!isLocale(params.locale)) notFound();
+  const t = COPIES[params.locale] as Copy;
   return (
     <html lang={params.locale}>
-      <body>{children}</body>
+      <body>
+        <Header t={t} current={params.locale} />
+        <main>{children}</main>
+        <Footer t={t} />
+      </body>
     </html>
   );
 }
