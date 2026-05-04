@@ -21,7 +21,7 @@ export default function Page({ params }: { params: { locale: string } }) {
   return (
     <>
       <Hero t={t} />
-      <LogoMarquee />
+      <LogoMarquee t={t} />
       <Problem t={t} />
       <HowWeWork t={t} />
       <Cases t={t} locale={params.locale as Locale} />

@@ -132,6 +132,10 @@ export const en = {
     cta: 'Discover the WeRise group →',
     href: 'https://werise.es',
   },
+  trust: {
+    eyebrow: 'Some of the institutions that trust us',
+    clients: ['Hofmann Culinary School', 'Barça Innovation Hub', 'Cambra de Comerç de Barcelona'],
+  },
   finalCta: {
     title: ['Your institution already excels at teaching.', 'Now it deserves to excel at growing.'],
     body: 'Book a free consultation with our team. No commitment — you walk away with an initial diagnosis of your educational business and concrete proposals for improvement.',
