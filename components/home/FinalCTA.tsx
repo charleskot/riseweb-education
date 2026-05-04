@@ -55,7 +55,7 @@ export default function FinalCTA({ t }: { t: Copy }) {
             href={HUBSPOT_MEETING_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full bg-wr-lime px-9 py-5 text-base font-bold text-wr-dark transition-colors hover:bg-wr-lime-lt"
+            className="inline-flex items-center gap-2 rounded-full bg-wr-lime px-9 py-5 text-base font-bold text-wr-dark transition-colors hover:bg-wr-lime-lt active:scale-[0.98]"
           >
             {t.finalCta.cta}
             <ArrowRight className="h-4 w-4" />

@@ -61,7 +61,7 @@ export default function Hero({ t }: { t: Copy }) {
             href={HUBSPOT_MEETING_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full bg-wr-lime px-7 py-3.5 text-sm font-bold text-wr-dark hover:bg-wr-lime-lt transition-colors"
+            className="inline-flex items-center gap-2 rounded-full bg-wr-lime px-7 py-3.5 text-sm font-bold text-wr-dark transition-colors hover:bg-wr-lime-lt active:scale-[0.98]"
           >
             {t.hero.ctaPrimary}
             <ArrowRight className="h-4 w-4" />

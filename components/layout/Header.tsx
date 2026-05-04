@@ -59,7 +59,7 @@ export default function Header({ t, current }: { t: Copy; current: Locale }) {
               href={HUBSPOT_MEETING_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full bg-wr-lime px-5 py-2 text-sm font-bold text-wr-dark hover:bg-wr-lime-lt transition-colors"
+              className="inline-flex items-center gap-2 rounded-full bg-wr-lime px-5 py-2 text-sm font-bold text-wr-dark transition-colors hover:bg-wr-lime-lt active:scale-[0.98]"
             >
               {t.header.cta}
               <ArrowRight className="h-4 w-4" />
@@ -97,7 +97,7 @@ export default function Header({ t, current }: { t: Copy; current: Locale }) {
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setMenuOpen(false)}
-            className="inline-flex items-center gap-2 rounded-full bg-wr-lime px-7 py-3 text-base font-bold text-wr-dark"
+            className="inline-flex items-center gap-2 rounded-full bg-wr-lime px-7 py-3 text-base font-bold text-wr-dark transition-transform active:scale-[0.98]"
           >
             {t.header.cta}
             <ArrowRight className="h-4 w-4" />

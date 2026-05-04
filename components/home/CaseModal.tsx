@@ -152,7 +152,7 @@ export default function CaseModal({
             href={HUBSPOT_MEETING_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full bg-wr-lime px-7 py-3.5 text-sm font-bold text-wr-dark transition-colors hover:bg-wr-lime-lt focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-wr-lime"
+            className="inline-flex items-center gap-2 rounded-full bg-wr-lime px-7 py-3.5 text-sm font-bold text-wr-dark transition-colors hover:bg-wr-lime-lt active:scale-[0.98] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-wr-lime"
           >
             {c.ctaLabel}
           </a>

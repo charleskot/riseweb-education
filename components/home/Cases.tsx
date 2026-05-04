@@ -107,9 +107,9 @@ export default function Cases({ t, locale }: { t: Copy; locale: Locale }) {
                 type="button"
                 disabled={!clickable}
                 onClick={() => clickable && open(c.id)}
-                className={`cases-item group flex flex-col items-start gap-5 rounded-2xl border border-transparent bg-wr-surface p-8 text-left transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-wr-lime ${
+                className={`cases-item group flex flex-col items-start gap-5 rounded-2xl border border-transparent bg-wr-surface p-8 text-left transition-all duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-wr-lime ${
                   clickable
-                    ? 'cursor-pointer hover:border-wr-lime/30 hover:bg-wr-white/[0.02]'
+                    ? 'cursor-pointer hover:-translate-y-0.5 hover:border-wr-lime/30 hover:bg-wr-white/[0.02]'
                     : 'cursor-not-allowed opacity-60'
                 }`}
               >
