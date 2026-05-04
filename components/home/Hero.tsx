@@ -26,7 +26,7 @@ export default function Hero({ t }: { t: Copy }) {
   return (
     <section
       ref={ref}
-      className="relative min-h-[80vh] md:min-h-screen overflow-hidden bg-wr-dark"
+      className="relative overflow-hidden bg-wr-dark"
     >
       {/* Subtle grid lines */}
       <div className="absolute inset-0 bg-grid-lines pointer-events-none" />
@@ -34,7 +34,7 @@ export default function Hero({ t }: { t: Copy }) {
       {/* Lime ambient glow — lower-right corner */}
       <div className="absolute bottom-[10%] right-[8%] h-[500px] w-[500px] rounded-full bg-wr-lime/[0.06] blur-[120px] pointer-events-none" />
 
-      <div className="relative z-10 mx-auto max-w-7xl px-6 pt-36 lg:pt-44 pb-24">
+      <div className="relative z-10 mx-auto max-w-7xl px-6 pt-36 lg:pt-40 pb-20 lg:pb-24">
         <div className="hero-item text-[11px] font-semibold uppercase tracking-widest text-wr-lime">
           {t.hero.eyebrow}
         </div>

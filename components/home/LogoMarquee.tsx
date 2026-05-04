@@ -1,41 +1,32 @@
-'use client';
-
 import Image from 'next/image';
 
+// Static trust strip with the 3 hero clients only.
+// Logos are rendered in white via CSS filter (brightness-0 invert) so they
+// look uniform on the dark background — no white card behind them.
 const LOGOS = [
   { id: 'hofmann', name: 'Hofmann Culinary School', src: '/logos/hofmann.png' },
   { id: 'barca', name: 'Barça Innovation Hub', src: '/logos/barca.png' },
-  { id: 'frankfurt', name: 'Frankfurt School', src: '/logos/frankfurt.png' },
   { id: 'cambra', name: 'Cambra de Comerç de Barcelona', src: '/logos/cambra.png' },
-  { id: 'inesa', name: 'Inesa Tech', src: '/logos/inesa.png' },
-  { id: 'nuclio', name: 'Nuclio Digital School', src: '/logos/nuclio.png' },
-  { id: 'tattoox', name: 'TATTOOX', src: '/logos/tattoox.png' },
 ];
 
 export default function LogoMarquee() {
-  // Duplicate the array so the loop is seamless (translateX(-50%) ends exactly on the duplicate)
-  const doubled = [...LOGOS, ...LOGOS];
-
   return (
     <section
       aria-label="Clientes"
-      className="border-y border-wr-border bg-wr-dark py-10 overflow-hidden"
+      className="border-y border-wr-border bg-wr-dark py-8"
     >
-      <div
-        className="flex gap-12 will-change-transform motion-reduce:!animate-none"
-        style={{ animation: 'marquee-scroll 40s linear infinite', width: 'max-content' }}
-      >
-        {doubled.map((logo, idx) => (
+      <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-x-16 gap-y-6 px-6 md:gap-x-24">
+        {LOGOS.map((logo) => (
           <div
-            key={`${logo.id}-${idx}`}
-            className="flex h-14 w-40 shrink-0 items-center justify-center rounded-md bg-white/95 px-4"
+            key={logo.id}
+            className="flex h-12 items-center justify-center"
           >
             <Image
               src={logo.src}
               alt={logo.name}
-              width={120}
-              height={40}
-              className="max-h-10 w-auto object-contain"
+              width={140}
+              height={48}
+              className="max-h-10 w-auto object-contain opacity-80 brightness-0 invert"
             />
           </div>
         ))}
