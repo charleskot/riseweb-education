@@ -1,9 +1,15 @@
+import Image from 'next/image';
 import type { Copy } from '@/lib/i18n/es';
 
-// Editorial trust strip — eyebrow + 3 client wordmarks rendered as text.
-// We avoid logo images here because the assets we have (Hofmann banner photo,
-// Barça JPG with white background) don't render well as inverted-white logos.
-// Text wordmarks read cleaner and match the editorial tone of the site.
+// Trust strip with the 3 hero clients. Logos are deck-rendered transparent
+// PNGs with light/white content — they sit cleanly on the dark background
+// without any filter.
+const LOGOS = [
+  { id: 'hofmann', name: 'Hofmann Culinary School', src: '/logos/hofmann.png', w: 180, h: 90 },
+  { id: 'barca', name: 'Barça Innovation Hub', src: '/logos/barca.png', w: 70, h: 72 },
+  { id: 'cambra', name: 'Cambra de Comerç de Barcelona', src: '/logos/cambra.png', w: 200, h: 51 },
+];
+
 export default function LogoMarquee({ t }: { t: Copy }) {
   return (
     <section
@@ -14,14 +20,20 @@ export default function LogoMarquee({ t }: { t: Copy }) {
         <p className="text-[11px] font-semibold uppercase tracking-widest text-wr-lime">
           {t.trust.eyebrow}
         </p>
-        <div className="mt-7 flex flex-wrap items-center justify-center gap-x-10 gap-y-5 md:gap-x-16">
-          {t.trust.clients.map((client) => (
-            <span
-              key={client}
-              className="text-base font-bold uppercase tracking-[0.18em] text-wr-white/80 md:text-lg"
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-x-12 gap-y-6 md:gap-x-20">
+          {LOGOS.map((logo) => (
+            <div
+              key={logo.id}
+              className="flex h-16 items-center justify-center"
             >
-              {client}
-            </span>
+              <Image
+                src={logo.src}
+                alt={logo.name}
+                width={logo.w}
+                height={logo.h}
+                className="h-auto w-auto max-h-12 opacity-80"
+              />
+            </div>
           ))}
         </div>
       </div>
