@@ -84,7 +84,7 @@ export default function Results({ t }: { t: Copy }) {
                   key={i}
                   className="results-item rounded-2xl border border-wr-border bg-wr-surface p-6"
                 >
-                  <div className="text-5xl font-black tracking-tighter text-wr-white md:text-6xl">
+                  <div className="text-5xl font-black tracking-tighter tabular-nums text-wr-white md:text-6xl">
                     {m.value}
                   </div>
                   <div className="mt-3 text-sm leading-snug text-wr-white/70">{m.label}</div>
@@ -92,7 +92,7 @@ export default function Results({ t }: { t: Copy }) {
               ))}
             </div>
             <div className="results-item flex flex-col justify-center rounded-2xl bg-wr-lime p-6 text-wr-dark lg:col-span-3">
-              <div className="text-4xl font-black tracking-tighter md:text-5xl">
+              <div className="text-4xl font-black tracking-tighter tabular-nums md:text-5xl">
                 {q.highlight.value}
               </div>
               <div className="mt-3 text-sm font-semibold leading-snug">{q.highlight.label}</div>

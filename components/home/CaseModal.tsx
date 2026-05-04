@@ -126,8 +126,8 @@ export default function CaseModal({
               <div className="mt-3 grid grid-cols-2 gap-3 md:grid-cols-4">
                 {c.yearGrid.map((y) => (
                   <div key={y.year} className="rounded-xl border border-wr-border p-4">
-                    <div className="text-xs uppercase tracking-widest text-wr-white/50">{y.year}</div>
-                    <div className="mt-1 text-2xl font-black text-wr-lime">{y.value}</div>
+                    <div className="text-xs uppercase tracking-widest tabular-nums text-wr-white/50">{y.year}</div>
+                    <div className="mt-1 text-2xl font-black tabular-nums text-wr-lime">{y.value}</div>
                     <div className="mt-1 text-xs text-wr-white/60">{y.sub}</div>
                   </div>
                 ))}
@@ -140,7 +140,7 @@ export default function CaseModal({
             <ul className="space-y-2 text-sm text-wr-white/80">
               {c.metrics.map((m, i) => (
                 <li key={i} className="flex gap-3">
-                  <strong className="min-w-[120px] text-wr-white">{m.value}</strong>
+                  <strong className="min-w-[120px] tabular-nums text-wr-white">{m.value}</strong>
                   <span>{m.label}</span>
                 </li>
               ))}
