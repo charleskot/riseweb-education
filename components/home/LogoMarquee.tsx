@@ -14,13 +14,13 @@ export default function LogoMarquee({ t }: { t: Copy }) {
   return (
     <section
       aria-label="Clientes"
-      className="border-y border-wr-border bg-wr-dark py-12 md:py-16"
+      className="border-y border-wr-border bg-wr-dark py-10 md:py-12"
     >
-      <div className="mx-auto max-w-7xl px-6 text-center">
+      <div className="mx-auto max-w-7xl px-6">
         <p className="text-[11px] font-semibold uppercase tracking-widest text-wr-lime">
           {t.trust.eyebrow}
         </p>
-        <div className="mt-8 flex flex-wrap items-center justify-center gap-x-12 gap-y-6 md:gap-x-20">
+        <div className="mt-6 flex flex-wrap items-center gap-x-12 gap-y-6 md:gap-x-20">
           {LOGOS.map((logo) => (
             <div
               key={logo.id}
