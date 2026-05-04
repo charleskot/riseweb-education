@@ -1,6 +1,7 @@
 import Hero from '@/components/home/Hero';
 import LogoMarquee from '@/components/home/LogoMarquee';
 import Problem from '@/components/home/Problem';
+import Solution from '@/components/home/Solution';
 import HowWeWork from '@/components/home/HowWeWork';
 import Cases from '@/components/home/Cases';
 import Results from '@/components/home/Results';
@@ -23,6 +24,7 @@ export default function Page({ params }: { params: { locale: string } }) {
       <Hero t={t} />
       <LogoMarquee t={t} />
       <Problem t={t} />
+      <Solution t={t} />
       <HowWeWork t={t} />
       <Cases t={t} locale={params.locale as Locale} />
       <Results t={t} />

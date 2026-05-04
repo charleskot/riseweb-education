@@ -29,6 +29,18 @@ export const es = {
       { title: 'Direcciones centradas en la operativa', body: 'con una enorme cantidad de datos sin una clara orientación.' },
     ],
   },
+  solution: {
+    eyebrow: 'Nuestra solución',
+    titleMain: 'El crecimiento real se sostiene en',
+    titleAccent: 'lo que no se ve.',
+    subtitle: 'Cuatro pilares que conectamos como un único motor de crecimiento predecible.',
+    pillars: [
+      { number: '01', title: 'Sistemas de visualización y reporting', body: 'Decisiones basadas en datos claros, no en intuiciones ni informes aislados.' },
+      { number: '02', title: 'Conocimiento profundo del negocio educativo', body: 'Entender las dinámicas propias del sector para diseñar una estrategia realista.' },
+      { number: '03', title: 'Tecnología integrada y bien configurada', body: 'CRM, sistemas de pago, SalesHub e IA conectados para que todo funcione como uno solo.' },
+      { number: '04', title: 'Ventas, marketing y estrategia alineados', body: 'No piezas sueltas, sino un único motor que genere matriculaciones de forma predecible.' },
+    ],
+  },
   howWeWork: {
     title: 'Niveles de colaboración según el momento de tu institución.',
     subtitle: 'No consultores, no comisionistas: dirección real del negocio.',

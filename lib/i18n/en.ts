@@ -29,6 +29,18 @@ export const en = {
       { title: 'Leadership focused on operations', body: 'with vast amounts of data but no clear direction.' },
     ],
   },
+  solution: {
+    eyebrow: 'Our solution',
+    titleMain: 'Real growth rests on',
+    titleAccent: "what you don't see.",
+    subtitle: 'Four pillars connected as a single, predictable growth engine.',
+    pillars: [
+      { number: '01', title: 'Reporting and visualization systems', body: 'Decisions based on clear data, not intuition or isolated reports.' },
+      { number: '02', title: 'Deep understanding of the educational business', body: "Knowing the sector's own dynamics to design a realistic strategy." },
+      { number: '03', title: 'Integrated and well-configured technology', body: 'CRM, payment systems, SalesHub and AI connected so everything works as one.' },
+      { number: '04', title: 'Sales, marketing and strategy aligned', body: 'Not isolated pieces, but a single engine that generates enrollments predictably.' },
+    ],
+  },
   howWeWork: {
     title: 'Levels of collaboration based on where your institution stands.',
     subtitle: 'Not consultants, not commission agents: real business leadership.',
