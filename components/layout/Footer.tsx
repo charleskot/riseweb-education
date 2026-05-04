@@ -5,7 +5,7 @@ export default function Footer({ t }: { t: Copy }) {
   const year = new Date().getFullYear();
   return (
     <footer className="border-t border-wr-border bg-wr-dark py-12 text-sm text-wr-white/60">
-      <div className="mx-auto flex max-w-[1440px] flex-col gap-6 px-6 md:flex-row md:items-center md:justify-between md:px-12 lg:px-20">
+      <div className="mx-auto flex max-w-7xl flex-col gap-6 px-6 md:flex-row md:items-center md:justify-between">
         <div className="flex items-center gap-4">
           <span className="font-bold text-wr-white">Rise Education</span>
           <span>{t.footer.parentLine}</span>

@@ -36,7 +36,7 @@ export default function Header({ t, current }: { t: Copy; current: Locale }) {
           scrolled ? 'bg-wr-dark/95 backdrop-blur border-b border-wr-border' : 'bg-transparent'
         }`}
       >
-        <div className="mx-auto max-w-[1440px] px-6 md:px-12 lg:px-20 flex items-center justify-between py-4">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
           <Link href={homeHref} className="font-bold text-wr-white">
             Rise Education
           </Link>
