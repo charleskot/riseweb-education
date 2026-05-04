@@ -96,12 +96,18 @@ export default function LocaleLayout({
       className={`${inter.variable} ${instrumentSerif.variable}`}
     >
       <body className="antialiased">
+        <a
+          href="#main"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-wr-lime focus:px-4 focus:py-2 focus:text-sm focus:font-bold focus:text-wr-dark"
+        >
+          {params.locale === 'es' ? 'Saltar al contenido' : 'Skip to content'}
+        </a>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
         />
         <Header t={t} current={params.locale} />
-        <main>{children}</main>
+        <main id="main">{children}</main>
         <Footer t={t} />
       </body>
     </html>
