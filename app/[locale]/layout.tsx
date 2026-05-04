@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { Inter, Instrument_Serif } from 'next/font/google';
 import { notFound } from 'next/navigation';
 import { isLocale } from '@/lib/i18n/config';
 import { es, type Copy } from '@/lib/i18n/es';
@@ -8,6 +9,22 @@ import Footer from '@/components/layout/Footer';
 import '../globals.css';
 
 const COPIES = { es, en } as const;
+
+// ─── Fonts ────────────────────────────────────────────────────────────────────
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+  display: 'swap',
+});
+
+const instrumentSerif = Instrument_Serif({
+  subsets: ['latin'],
+  weight: '400',
+  style: ['normal', 'italic'],
+  variable: '--font-instrument',
+  display: 'swap',
+});
 
 export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
   if (!isLocale(params.locale)) return {};
@@ -74,8 +91,11 @@ export default function LocaleLayout({
     ],
   };
   return (
-    <html lang={params.locale}>
-      <body>
+    <html
+      lang={params.locale}
+      className={`${inter.variable} ${instrumentSerif.variable}`}
+    >
+      <body className="antialiased">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
