@@ -34,18 +34,18 @@ export default function Hero({ t }: { t: Copy }) {
       {/* Lime ambient glow — lower-right corner */}
       <div className="absolute bottom-[10%] right-[8%] h-[500px] w-[500px] rounded-full bg-wr-lime/[0.06] blur-[120px] pointer-events-none" />
 
-      <div className="relative z-10 mx-auto max-w-[1440px] px-6 md:px-12 lg:px-20 pt-36 lg:pt-44 pb-24">
-        <div className="hero-item text-xs font-semibold uppercase tracking-[0.2em] text-wr-lime">
+      <div className="relative z-10 mx-auto max-w-7xl px-6 pt-36 lg:pt-44 pb-24">
+        <div className="hero-item text-[11px] font-semibold uppercase tracking-widest text-wr-lime">
           {t.hero.eyebrow}
         </div>
 
         <h1
-          className="hero-item mt-6 font-black tracking-tight text-wr-white"
+          className="hero-item mt-6 font-black tracking-tighter text-wr-white"
           style={{ fontSize: 'clamp(2.5rem, 5.5vw, 5.5rem)', lineHeight: 1.05 }}
         >
           {t.hero.headline.map((line, i) => (
             <span key={i} className="block">
-              {line}
+              {i === 1 ? <em className="font-serif italic text-wr-gray">{line}</em> : line}
             </span>
           ))}
         </h1>
