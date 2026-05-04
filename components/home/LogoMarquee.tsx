@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const LOGOS = [
   { id: 'hofmann', name: 'Hofmann Culinary School', src: '/logos/hofmann.png' },
-  { id: 'barca', name: 'Barça Innovation Hub', src: '/logos/barca.jpg' },
+  { id: 'barca', name: 'Barça Innovation Hub', src: '/logos/barca.png' },
   { id: 'frankfurt', name: 'Frankfurt School', src: '/logos/frankfurt.png' },
   { id: 'cambra', name: 'Cambra de Comerç de Barcelona', src: '/logos/cambra.png' },
   { id: 'inesa', name: 'Inesa Tech', src: '/logos/inesa.png' },

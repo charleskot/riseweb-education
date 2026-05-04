@@ -78,7 +78,7 @@ export const CASES: CaseStudy[] = [
   },
   {
     id: 'barca',
-    logo: '/logos/barca.jpg',
+    logo: '/logos/barca.png',
     available: true,
     content: {
       es: {
@@ -140,4 +140,4 @@ export const CASES: CaseStudy[] = [
   },
 ];
 
-export const HUBSPOT_MEETING_URL = 'https://meetings.hubspot.com/charles-k'; // VERIFY exact URL with the one in the current WordPress site before launch
+export const HUBSPOT_MEETING_URL = 'https://meetings-eu1.hubspot.com/rebeca-marcen';
