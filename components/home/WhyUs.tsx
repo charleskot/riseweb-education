@@ -63,22 +63,26 @@ export default function WhyUs({ t }: { t: Copy }) {
           <p className="mt-6 max-w-3xl text-lg text-wr-white/70">{t.whyUs.subtitle}</p>
         </div>
 
-        {/* Pillars — horizontal layout: icon left, content right */}
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+        {/* Pillars — full-width editorial rows: icon | title | body */}
+        <div className="border-t border-wr-border">
           {t.whyUs.pillars.map((p, i) => {
             const Icon = PILLAR_ICONS[i] ?? Award;
             return (
               <article
                 key={i}
-                className="whyus-pillar flex gap-5 rounded-2xl border border-wr-border bg-wr-surface p-6"
+                className="whyus-pillar group grid grid-cols-1 gap-4 border-b border-wr-border px-2 py-8 transition-colors duration-300 hover:bg-wr-white/[0.02] md:grid-cols-12 md:items-start md:gap-8 md:py-10"
               >
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-md bg-wr-lime/10">
-                  <Icon className="h-5 w-5 text-wr-lime" />
+                <div className="md:col-span-1">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-md bg-wr-lime/10">
+                    <Icon className="h-5 w-5 text-wr-lime" />
+                  </div>
                 </div>
-                <div>
-                  <h3 className="text-base font-bold tracking-tight text-wr-white">{p.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-wr-white/70">{p.body}</p>
-                </div>
+                <h3 className="text-balance text-lg font-bold tracking-tight text-wr-white md:col-span-4 md:text-xl">
+                  {p.title}
+                </h3>
+                <p className="max-w-prose text-base leading-relaxed text-wr-white/70 md:col-span-7">
+                  {p.body}
+                </p>
               </article>
             );
           })}
