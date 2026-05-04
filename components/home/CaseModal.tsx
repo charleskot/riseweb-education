@@ -97,7 +97,7 @@ export default function CaseModal({
           </div>
 
           {/* Title */}
-          <h2 id={titleId} className="text-2xl font-black md:text-4xl">
+          <h2 id={titleId} className="text-balance text-2xl font-black md:text-4xl">
             {c.modalTitle}
           </h2>
 

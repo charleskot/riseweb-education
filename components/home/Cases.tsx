@@ -88,7 +88,7 @@ export default function Cases({ t, locale }: { t: Copy; locale: Locale }) {
           <p className="mb-3 text-[11px] font-semibold uppercase tracking-widest text-wr-lime">
             Casos de éxito
           </p>
-          <h2 className="text-4xl font-black tracking-tighter text-wr-white md:text-5xl">
+          <h2 className="text-balance text-4xl font-black tracking-tighter text-wr-white md:text-5xl">
             {t.cases.title}
           </h2>
           <p className="mt-6 max-w-3xl text-lg text-wr-white/70">{t.cases.subtitle}</p>

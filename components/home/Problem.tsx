@@ -50,7 +50,7 @@ export default function Problem({ t }: { t: Copy }) {
             <p className="mb-3 text-[11px] font-semibold uppercase tracking-widest text-wr-lime">
               El problema
             </p>
-            <h2 className="text-4xl font-black tracking-tighter text-wr-white md:text-5xl">
+            <h2 className="text-balance text-4xl font-black tracking-tighter text-wr-white md:text-5xl">
               {t.problem.title}
             </h2>
           </div>

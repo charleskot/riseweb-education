@@ -57,7 +57,7 @@ export default function WhyUs({ t }: { t: Copy }) {
           <p className="mb-3 text-[11px] font-semibold uppercase tracking-widest text-wr-lime">
             Por qué nosotros
           </p>
-          <h2 className="text-4xl font-black tracking-tighter text-wr-white md:text-5xl">
+          <h2 className="text-balance text-4xl font-black tracking-tighter text-wr-white md:text-5xl">
             {t.whyUs.title}
           </h2>
           <p className="mt-6 max-w-3xl text-lg text-wr-white/70">{t.whyUs.subtitle}</p>
@@ -90,7 +90,7 @@ export default function WhyUs({ t }: { t: Copy }) {
             Alternativas
           </h3>
           <div className="rounded-2xl bg-wr-surface p-8 md:p-12">
-            <h3 className="text-2xl font-bold tracking-tight text-wr-white md:text-3xl">
+            <h3 className="text-balance text-2xl font-bold tracking-tight text-wr-white md:text-3xl">
               {t.whyUs.alternatives.title}
             </h3>
             <div className="mt-8 divide-y divide-wr-border">

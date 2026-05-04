@@ -38,7 +38,7 @@ export default function FinalCTA({ t }: { t: Copy }) {
 
       <div className="cta-content relative z-10 mx-auto max-w-7xl px-6 text-center">
         <h2
-          className="font-black tracking-tighter text-wr-white"
+          className="text-balance font-black tracking-tighter text-wr-white"
           style={{ fontSize: 'clamp(2.25rem, 5vw, 4.5rem)', lineHeight: 1.05 }}
         >
           {t.finalCta.title.map((line, i) => (

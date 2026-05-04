@@ -52,7 +52,7 @@ export default function WeRiseGroup({ t }: { t: Copy }) {
         <p className="mb-3 text-[11px] font-semibold uppercase tracking-widest text-wr-lime">
           Grupo WeRise
         </p>
-        <h2 className="text-3xl font-black tracking-tighter text-wr-white md:text-4xl">
+        <h2 className="text-balance text-3xl font-black tracking-tighter text-wr-white md:text-4xl">
           {parts ? (
             <>
               {parts.before}

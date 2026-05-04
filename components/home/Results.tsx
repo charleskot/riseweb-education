@@ -61,7 +61,7 @@ export default function Results({ t }: { t: Copy }) {
           <p className="mb-3 text-[11px] font-semibold uppercase tracking-widest text-wr-lime">
             Resultados
           </p>
-          <h2 className="text-4xl font-black tracking-tighter text-wr-white md:text-5xl">
+          <h2 className="text-balance text-4xl font-black tracking-tighter text-wr-white md:text-5xl">
             {titleMain}
             {titleAccent && (
               <>
