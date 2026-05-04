@@ -1,6 +1,6 @@
 export default function NotFound() {
   return (
-    <main className="flex min-h-[80vh] items-center justify-center bg-wr-dark px-6 text-center">
+    <div className="flex min-h-[80vh] items-center justify-center bg-wr-dark px-6 text-center">
       <div>
         <p className="text-[11px] font-semibold uppercase tracking-widest text-wr-lime">404</p>
         <h1 className="text-balance mt-4 text-4xl font-black tracking-tighter text-wr-white md:text-6xl">
@@ -16,6 +16,6 @@ export default function NotFound() {
           Inicio
         </a>
       </div>
-    </main>
+    </div>
   );
 }
