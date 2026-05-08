@@ -34,13 +34,13 @@ export const CASES: CaseStudy[] = [
     content: {
       es: {
         client: 'Hofmann Culinary School',
-        hook: 'De pérdidas de 1M€ a proyectar 10M€ de facturación en 3 años.',
-        modalTitle: 'De crisis estructural a multiplicar facturación por 3 en menos de tres años.',
-        startingPoint: 'Cuando entramos en Hofmann a mediados de 2024, la escuela arrastraba una crisis estructural: sin CRM, sin equipo comercial profesionalizado, sin métricas y con una pérdida directa de un millón de euros por un programa que no llenó plazas. Facturación 2023: 3M€. Operaba solo en presencial, con marca potente pero sin maquinaria para monetizarla.',
-        whatWeDid: 'Trabajamos la transformación en fases secuenciadas: primero la base tecnológica (CRM HubSpot + Skola + cuadro de mando), después la construcción del equipo comercial interno (diseño, selección, onboarding y gestión), y finalmente el salto digital con un campus online y un equipo de ventas online operado desde WeRise durante la fase de arranque.',
+        hook: 'Una marca culinaria de referencia, potenciada con procesos comerciales y tecnología para multiplicar x3 su facturación.',
+        modalTitle: 'Multiplicando por 3 la facturación de una de las escuelas culinarias más prestigiosas de Europa.',
+        startingPoint: 'Hofmann es una de las escuelas culinarias de referencia en Europa, con una marca premium consolidada y un nivel formativo excepcional. La oportunidad: profesionalizar y escalar la operación comercial para que la maquinaria de negocio estuviera al nivel de la marca y del talento académico. Punto de partida: facturación 3M€, exclusivamente presencial, con un enorme potencial digital y de captación todavía por activar.',
+        whatWeDid: 'Construimos la transformación por fases: primero la base tecnológica (CRM, plataforma de matriculación y pagos, cuadro de mando), después un equipo comercial interno (diseño, selección, onboarding y gestión), y finalmente el salto digital con un campus online y un equipo de ventas online operado desde WeRise durante la fase de arranque.',
         resultsHeading: 'Resultados',
         yearGrid: [
-          { year: '2023', value: '3 M€', sub: 'Crisis · pérdida 1M€' },
+          { year: '2023', value: '3 M€', sub: 'Punto de partida · presencial' },
           { year: '2024', value: '5 M€', sub: '+60% · ocupación 89%' },
           { year: '2025', value: '7 M€', sub: 'EBITDA 1,9 M€' },
           { year: '2026 (proy.)', value: '+10 M€', sub: 'EBITDA +2,5 M€' },
@@ -55,13 +55,13 @@ export const CASES: CaseStudy[] = [
       },
       en: {
         client: 'Hofmann Culinary School',
-        hook: 'From €1M losses to a projected €10M revenue in 3 years.',
-        modalTitle: 'From structural crisis to tripling revenue in under three years.',
-        startingPoint: 'When we engaged with Hofmann in mid-2024, the school was facing a structural crisis: no CRM, no professionalized commercial team, no metrics, and a direct €1M loss from a program that failed to fill seats. 2023 revenue: €3M. The school operated only in-person, with a strong brand but no machinery to monetize it.',
-        whatWeDid: 'We led the transformation in sequenced phases: first the technology base (HubSpot CRM + Skola + dashboard), then building the in-house commercial team (design, selection, onboarding, management), and finally the digital leap with an online campus and an online sales team operated from WeRise during ramp-up.',
+        hook: 'A reference culinary brand, powered by commercial processes and technology to scale revenue 3x.',
+        modalTitle: 'Tripling the revenue of one of Europe\'s most prestigious culinary schools.',
+        startingPoint: 'Hofmann is one of the leading culinary schools in Europe, with a consolidated premium brand and an exceptional level of training. The opportunity: professionalize and scale the commercial operation so the business machinery would match the brand and the academic talent. Starting point: €3M revenue, exclusively in-person, with significant digital and lead-gen potential still to activate.',
+        whatWeDid: 'We led the transformation in sequenced phases: first the technology base (CRM, enrollment & payments platform, dashboard), then the in-house commercial team (design, selection, onboarding, management), and finally the digital leap with an online campus and an online sales team operated from WeRise during ramp-up.',
         resultsHeading: 'Results',
         yearGrid: [
-          { year: '2023', value: '€3M', sub: 'Crisis · €1M loss' },
+          { year: '2023', value: '€3M', sub: 'Starting point · in-person' },
           { year: '2024', value: '€5M', sub: '+60% · 89% occupancy' },
           { year: '2025', value: '€7M', sub: '€1.9M EBITDA' },
           { year: '2026 (proj.)', value: '+€10M', sub: '+€2.5M EBITDA' },

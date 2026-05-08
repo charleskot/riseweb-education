@@ -113,13 +113,13 @@ export default function Cases({ t, locale }: { t: Copy; locale: Locale }) {
                     : 'cursor-not-allowed opacity-60'
                 }`}
               >
-                <div className="flex h-12 w-28 items-center justify-center rounded-md bg-white/95 px-3">
+                <div className="flex h-16 items-center">
                   <Image
                     src={c.logo}
                     alt={content.client}
-                    width={120}
-                    height={40}
-                    className="max-h-8 w-auto object-contain"
+                    width={180}
+                    height={64}
+                    className="h-auto w-auto max-h-12 object-contain opacity-80"
                   />
                 </div>
                 <div className="text-lg font-semibold tracking-tight text-wr-white">

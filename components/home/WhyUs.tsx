@@ -33,15 +33,6 @@ export default function WhyUs({ t }: { t: Copy }) {
           scrollTrigger: { trigger: '.whyus-pillar', start: 'top bottom', once: true },
         }
       );
-      gsap.fromTo(
-        '.whyus-alt-block',
-        { opacity: 0, y: 30 },
-        {
-          opacity: 1, y: 0, duration: 0.7, ease: 'power3.out',
-          immediateRender: false,
-          scrollTrigger: { trigger: '.whyus-alt-block', start: 'top bottom', once: true },
-        }
-      );
     }, ref);
     return () => ctx.revert();
   }, []);
@@ -88,30 +79,6 @@ export default function WhyUs({ t }: { t: Copy }) {
           })}
         </div>
 
-        {/* Alternatives — comparison-table style */}
-        <div className="whyus-alt-block mt-20">
-          <h3 className="mb-3 text-[11px] font-semibold uppercase tracking-widest text-wr-lime">
-            Alternativas
-          </h3>
-          <div className="rounded-2xl bg-wr-surface p-8 md:p-12">
-            <h3 className="text-balance text-2xl font-bold tracking-tight text-wr-white md:text-3xl">
-              {t.whyUs.alternatives.title}
-            </h3>
-            <div className="mt-8 divide-y divide-wr-border">
-              {t.whyUs.alternatives.items.map((item, i) => (
-                <div key={i} className="grid grid-cols-1 gap-2 py-5 md:grid-cols-3 md:gap-6">
-                  <h4 className="text-sm font-bold tracking-tight text-wr-white">{item.title}</h4>
-                  <p className="text-sm leading-relaxed text-wr-white/60 md:col-span-2">
-                    {item.body}
-                  </p>
-                </div>
-              ))}
-            </div>
-            <p className="mt-8 border-t border-wr-border pt-8 text-base text-wr-lime md:text-lg">
-              <em className="font-serif italic">{t.whyUs.alternatives.closer}</em>
-            </p>
-          </div>
-        </div>
       </div>
     </section>
   );
