@@ -6,6 +6,8 @@ import { es, type Copy } from '@/lib/i18n/es';
 import { en } from '@/lib/i18n/en';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import CookieBanner from '@/components/layout/CookieBanner';
+import type { Locale } from '@/lib/i18n/config';
 import '../globals.css';
 
 const COPIES = { es, en } as const;
@@ -106,9 +108,10 @@ export default function LocaleLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
         />
-        <Header t={t} current={params.locale} />
+        <Header t={t} current={params.locale as Locale} />
         <main id="main">{children}</main>
-        <Footer t={t} />
+        <Footer t={t} locale={params.locale as Locale} />
+        <CookieBanner t={t} locale={params.locale as Locale} />
       </body>
     </html>
   );

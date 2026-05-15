@@ -147,11 +147,40 @@ export const es = {
     email: 'hello@werise.education',
   },
   footer: {
+    tagline: 'Vertical educación de WeRise. Crecimiento real para instituciones académicas.',
+    contact: { email: 'hello@werise.education', location: 'Barcelona · Remote-first' },
+    columns: {
+      navegacion: {
+        heading: 'Navegación',
+        links: [
+          { label: 'Qué hacemos', href: '#que-hacemos' },
+          { label: 'Casos', href: '#casos' },
+          { label: 'Resultados', href: '#resultados' },
+          { label: 'Por qué nosotros', href: '#por-que-nosotros' },
+          { label: 'Tecnología', href: '#tecnologia' },
+        ],
+      },
+      grupo: {
+        heading: 'Grupo WeRise',
+        links: [
+          { label: 'WeRise — werise.es', href: 'https://werise.es', external: true },
+          { label: 'LinkedIn', href: 'https://www.linkedin.com/company/werise-education', external: true },
+        ],
+      },
+    },
+    ctaLabel: 'Agenda diagnóstico',
     parentLine: 'Vertical educación de WeRise — werise.es',
     privacy: 'Política de privacidad',
     cookies: 'Política de cookies',
     linkedin: 'LinkedIn',
-    copyright: '© {year} Rise Education. Todos los derechos reservados.',
+    copyright: '© {year} WeRise®. Todos los derechos reservados.',
+  },
+  cookieBanner: {
+    message: 'Usamos cookies para mejorar tu experiencia. Puedes aceptar todas o solo las necesarias.',
+    moreInfo: 'Más info',
+    acceptEssential: 'Solo necesarias',
+    acceptAll: 'Aceptar todas',
+    ariaLabel: 'Aviso de cookies',
   },
 } as const;
 
