@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Menu, X, ArrowRight } from 'lucide-react';
 import LangToggle from '@/components/ui/LangToggle';
 import { HUBSPOT_MEETING_URL } from '@/lib/cases';
@@ -37,8 +38,15 @@ export default function Header({ t, current }: { t: Copy; current: Locale }) {
         }`}
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-          <Link href={homeHref} className="font-bold text-wr-white">
-            Rise Education
+          <Link href={homeHref} aria-label="WeRise" className="flex items-center">
+            <Image
+              src="/werise-wordmark.png"
+              alt="WeRise"
+              width={140}
+              height={40}
+              priority
+              className="h-7 w-auto md:h-8"
+            />
           </Link>
 
           <nav className="hidden md:flex items-center gap-7">

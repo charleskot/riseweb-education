@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import type { Copy } from '@/lib/i18n/es';
 
 export default function Footer({ t }: { t: Copy }) {
@@ -7,7 +8,13 @@ export default function Footer({ t }: { t: Copy }) {
     <footer className="border-t border-wr-border bg-wr-dark py-12 text-sm text-wr-white/60">
       <div className="mx-auto flex max-w-7xl flex-col gap-6 px-6 md:flex-row md:items-center md:justify-between">
         <div className="flex items-center gap-4">
-          <span className="font-bold text-wr-white">Rise Education</span>
+          <Image
+            src="/werise-wordmark.png"
+            alt="WeRise"
+            width={120}
+            height={32}
+            className="h-6 w-auto opacity-90"
+          />
           <span>{t.footer.parentLine}</span>
         </div>
         <nav className="flex flex-wrap items-center gap-6">

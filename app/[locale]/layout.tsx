@@ -70,7 +70,7 @@ export default function LocaleLayout({
     '@type': 'Organization',
     name: 'Rise Education',
     url: 'https://werise.education',
-    logo: 'https://werise.education/rise-education-logo.png',
+    logo: 'https://werise.education/werise-wordmark.png',
     description: t.meta.description,
     parentOrganization: {
       '@type': 'Organization',
