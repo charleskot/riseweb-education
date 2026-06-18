@@ -28,55 +28,6 @@ export interface CaseStudy {
 
 export const CASES: CaseStudy[] = [
   {
-    id: 'hofmann',
-    logo: '/logos/hofmann.png',
-    available: true,
-    content: {
-      es: {
-        client: 'Hofmann Culinary School',
-        hook: 'Una marca culinaria de referencia, potenciada con procesos comerciales y tecnología para multiplicar x3 su facturación.',
-        modalTitle: 'Multiplicando por 3 la facturación de una de las escuelas culinarias más prestigiosas de Europa.',
-        startingPoint: 'Hofmann es una de las escuelas culinarias de referencia en Europa, con una marca premium consolidada y un nivel formativo excepcional. La oportunidad: profesionalizar y escalar la operación comercial para que la maquinaria de negocio estuviera al nivel de la marca y del talento académico. Punto de partida: facturación 3M€, exclusivamente presencial, con un enorme potencial digital y de captación todavía por activar.',
-        whatWeDid: 'Construimos la transformación por fases: primero la base tecnológica (CRM, plataforma de matriculación y pagos, cuadro de mando), después un equipo comercial interno (diseño, selección, onboarding y gestión), y finalmente el salto digital con un campus online y un equipo de ventas online operado desde WeRise durante la fase de arranque.',
-        resultsHeading: 'Resultados',
-        yearGrid: [
-          { year: '2023', value: '3 M€', sub: 'Punto de partida · presencial' },
-          { year: '2024', value: '5 M€', sub: '+60% · ocupación 89%' },
-          { year: '2025', value: '7 M€', sub: 'EBITDA 1,9 M€' },
-          { year: '2026 (proy.)', value: '+10 M€', sub: 'EBITDA +2,5 M€' },
-        ],
-        metrics: [
-          { value: '56% → 89%', label: 'ocupación presencial' },
-          { value: '<3%', label: 'CAC sobre facturación' },
-          { value: '0 → 60-70k€/mes', label: 'canal online en 4-5 meses' },
-          { value: 'x3', label: 'facturación en menos de 3 años' },
-        ],
-        ctaLabel: 'Agenda una consulta',
-      },
-      en: {
-        client: 'Hofmann Culinary School',
-        hook: 'A reference culinary brand, powered by commercial processes and technology to scale revenue 3x.',
-        modalTitle: 'Tripling the revenue of one of Europe\'s most prestigious culinary schools.',
-        startingPoint: 'Hofmann is one of the leading culinary schools in Europe, with a consolidated premium brand and an exceptional level of training. The opportunity: professionalize and scale the commercial operation so the business machinery would match the brand and the academic talent. Starting point: €3M revenue, exclusively in-person, with significant digital and lead-gen potential still to activate.',
-        whatWeDid: 'We led the transformation in sequenced phases: first the technology base (CRM, enrollment & payments platform, dashboard), then the in-house commercial team (design, selection, onboarding, management), and finally the digital leap with an online campus and an online sales team operated from WeRise during ramp-up.',
-        resultsHeading: 'Results',
-        yearGrid: [
-          { year: '2023', value: '€3M', sub: 'Starting point · in-person' },
-          { year: '2024', value: '€5M', sub: '+60% · 89% occupancy' },
-          { year: '2025', value: '€7M', sub: '€1.9M EBITDA' },
-          { year: '2026 (proj.)', value: '+€10M', sub: '+€2.5M EBITDA' },
-        ],
-        metrics: [
-          { value: '56% → 89%', label: 'in-person occupancy' },
-          { value: '<3%', label: 'CAC over revenue' },
-          { value: '0 → €60-70k/mo', label: 'online channel in 4-5 months' },
-          { value: '3x', label: 'revenue in under 3 years' },
-        ],
-        ctaLabel: 'Book a consultation',
-      },
-    },
-  },
-  {
     id: 'barca',
     logo: '/logos/barca.png',
     available: true,

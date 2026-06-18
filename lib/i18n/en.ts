@@ -138,7 +138,7 @@ export const en = {
   },
   trust: {
     eyebrow: 'Some of the institutions that trust us',
-    clients: ['Hofmann Culinary School', 'Barça Innovation Hub', 'Cambra de Comerç de Barcelona'],
+    clients: ['Barça Innovation Hub', 'Cambra de Comerç de Barcelona'],
   },
   finalCta: {
     title: ['Your institution already excels at teaching.', 'Now it deserves to excel at growing.'],

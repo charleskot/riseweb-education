@@ -5,7 +5,6 @@ import type { Copy } from '@/lib/i18n/es';
 // PNGs with light/white content — they sit cleanly on the dark background
 // without any filter.
 const LOGOS = [
-  { id: 'hofmann', name: 'Hofmann Culinary School', src: '/logos/hofmann.png', w: 180, h: 90 },
   { id: 'barca', name: 'Barça Innovation Hub', src: '/logos/barca.png', w: 70, h: 72 },
   { id: 'cambra', name: 'Cambra de Comerç de Barcelona', src: '/logos/cambra.png', w: 200, h: 51 },
 ];

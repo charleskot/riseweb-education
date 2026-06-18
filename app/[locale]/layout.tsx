@@ -83,7 +83,6 @@ export default function LocaleLayout({
       'https://www.linkedin.com/company/werise-education',
     ],
     brand: [
-      { '@type': 'Brand', name: 'Hofmann Culinary School' },
       { '@type': 'Brand', name: 'Barça Innovation Hub' },
       { '@type': 'Brand', name: 'Frankfurt School of Finance & Management' },
       { '@type': 'Brand', name: 'Cambra de Comerç de Barcelona' },
