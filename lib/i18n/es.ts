@@ -9,6 +9,7 @@ export const es = {
       { label: 'Qué hacemos', href: '#que-hacemos' },
       { label: 'Por qué nosotros', href: '#por-que-nosotros' },
       { label: 'Tecnología', href: '#tecnologia' },
+      { label: 'Formación', href: '/es/formacion' },
     ],
     cta: 'Agenda diagnóstico gratuito',
   },
@@ -158,6 +159,7 @@ export const es = {
           { label: 'Resultados', href: '#resultados' },
           { label: 'Por qué nosotros', href: '#por-que-nosotros' },
           { label: 'Tecnología', href: '#tecnologia' },
+          { label: 'Formación', href: '/es/formacion' },
         ],
       },
       grupo: {

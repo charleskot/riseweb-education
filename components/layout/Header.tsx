@@ -53,7 +53,7 @@ export default function Header({ t, current }: { t: Copy; current: Locale }) {
             {t.header.nav.map((item) => (
               <a
                 key={item.href}
-                href={item.href}
+                href={item.href.startsWith("#") ? `${homeHref}${item.href}` : item.href}
                 className="text-sm text-wr-white/70 hover:text-wr-white transition-colors"
               >
                 {item.label}
@@ -92,7 +92,7 @@ export default function Header({ t, current }: { t: Copy; current: Locale }) {
           {t.header.nav.map((item) => (
             <a
               key={item.href}
-              href={item.href}
+              href={item.href.startsWith("#") ? `${homeHref}${item.href}` : item.href}
               onClick={() => setMenuOpen(false)}
               className="text-2xl font-semibold text-wr-white"
             >

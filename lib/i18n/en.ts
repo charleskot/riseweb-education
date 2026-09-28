@@ -9,6 +9,7 @@ export const en = {
       { label: 'What we do', href: '#que-hacemos' },
       { label: 'Why us', href: '#por-que-nosotros' },
       { label: 'Technology', href: '#tecnologia' },
+      { label: 'Training', href: '/en/formacion' },
     ],
     cta: 'Book a free diagnosis',
   },
@@ -158,6 +159,7 @@ export const en = {
           { label: 'Results', href: '#resultados' },
           { label: 'Why us', href: '#por-que-nosotros' },
           { label: 'Technology', href: '#tecnologia' },
+          { label: 'Training', href: '/en/formacion' },
         ],
       },
       grupo: {
