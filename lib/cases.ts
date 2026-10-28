@@ -1,6 +1,6 @@
 import type { Locale } from './i18n/config';
 
-export type CaseId = 'hofmann' | 'barca' | 'cambra';
+export type CaseId = 'barca' | 'cambra' | 'reversal';
 
 export interface CaseMetric {
   value: string;
@@ -94,6 +94,43 @@ export const CASES: CaseStudy[] = [
           { value: 'Multi-tenant', label: 'serving the network of chambers and entities simultaneously' },
           { value: 'GDPR + FUNDAE', label: 'compliance by design' },
           { value: 'Full autonomy', label: 'internal team trained to operate without external dependence' },
+        ],
+        ctaLabel: 'Book a consultation',
+      },
+    },
+  },
+  {
+    id: 'reversal',
+    logo: '/logos/reversal.png',
+    available: true,
+    content: {
+      es: {
+        client: 'Reversal Institute',
+        hook: 'Proyecto propio: diseñamos, lanzamos y operamos una escuela online de longevidad con título universitario.',
+        modalTitle: 'Reversal Institute: una escuela de longevidad lanzada y operada por Rise.',
+        startingPoint: 'Reversal Institute es un proyecto propio de Rise. Detectamos una categoría formativa emergente —la longevidad y el healthspan— sin una oferta seria en español para los profesionales del bienestar: nutricionistas, entrenadores, fisioterapeutas, coaches, farmacéuticos o dueños de clínicas wellness. El reto: construir desde cero una escuela creíble, con respaldo universitario y un modelo comercial escalable.',
+        whatWeDid: 'Aplicamos nuestro propio método de principio a fin: definición del producto académico y del claustro de expertos en activo, convenio con la Universidad Isabel I para la titulación, marca y web, sistema de captación y admisiones conectado a CRM, plataforma de matriculación y pagos, campus online con clases en directo y asistente IA para el alumno. Hoy operamos la Certificación en Longevidad y Healthspan, especializaciones clínicas y de negocio, y el Reversal Summit.',
+        resultsHeading: 'Resultados',
+        metrics: [
+          { value: '15 ECTS', label: 'título propio expedido por la Universidad Isabel I' },
+          { value: '16 semanas', label: 'programa online con clases en directo y 10 módulos' },
+          { value: 'Escuela completa', label: 'certificación, especializaciones y summit propio' },
+          { value: '100% Rise', label: 'producto, captación, tecnología y operación' },
+        ],
+        ctaLabel: 'Agenda una consulta',
+      },
+      en: {
+        client: 'Reversal Institute',
+        hook: 'Our own project: we designed, launched and run an online longevity school with a university degree.',
+        modalTitle: 'Reversal Institute: a longevity school launched and run by Rise.',
+        startingPoint: 'Reversal Institute is a Rise in-house project. We spotted an emerging training category —longevity and healthspan— with no serious Spanish-language offer for wellness professionals: nutritionists, trainers, physiotherapists, coaches, pharmacists and wellness clinic owners. The challenge: build a credible school from scratch, with university backing and a scalable commercial model.',
+        whatWeDid: 'We applied our own method end to end: academic product design and a faculty of practising experts, an agreement with Universidad Isabel I for the degree, brand and website, lead-gen and admissions system connected to the CRM, enrollment and payments platform, and an online campus with live classes and an AI assistant for students. Today we run the Longevity and Healthspan Certification, clinical and business specializations, and the Reversal Summit.',
+        resultsHeading: 'Results',
+        metrics: [
+          { value: '15 ECTS', label: 'university degree issued by Universidad Isabel I' },
+          { value: '16 weeks', label: 'online program with live classes and 10 modules' },
+          { value: 'Full school', label: 'certification, specializations and its own summit' },
+          { value: '100% Rise', label: 'product, lead-gen, technology and operations' },
         ],
         ctaLabel: 'Book a consultation',
       },

@@ -7,6 +7,7 @@ import type { Copy } from '@/lib/i18n/es';
 const LOGOS = [
   { id: 'barca', name: 'Barça Innovation Hub', src: '/logos/barca.png', w: 70, h: 72 },
   { id: 'cambra', name: 'Cambra de Comerç de Barcelona', src: '/logos/cambra.png', w: 200, h: 51 },
+  { id: 'reversal', name: 'Reversal Institute', src: '/logos/reversal.png', w: 200, h: 43 },
 ];
 
 export default function LogoMarquee({ t }: { t: Copy }) {

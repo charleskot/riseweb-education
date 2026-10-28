@@ -86,6 +86,7 @@ export default function LocaleLayout({
       { '@type': 'Brand', name: 'Barça Innovation Hub' },
       { '@type': 'Brand', name: 'Frankfurt School of Finance & Management' },
       { '@type': 'Brand', name: 'Cambra de Comerç de Barcelona' },
+      { '@type': 'Brand', name: 'Reversal Institute' },
       { '@type': 'Brand', name: 'Inesa Tech' },
       { '@type': 'Brand', name: 'Nuclio Digital School' },
       { '@type': 'Brand', name: 'TATTOOX' },

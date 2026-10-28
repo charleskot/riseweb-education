@@ -139,7 +139,7 @@ export const en = {
   },
   trust: {
     eyebrow: 'Some of the institutions that trust us',
-    clients: ['Barça Innovation Hub', 'Cambra de Comerç de Barcelona'],
+    clients: ['Barça Innovation Hub', 'Cambra de Comerç de Barcelona', 'Reversal Institute'],
   },
   finalCta: {
     title: ['Your institution already excels at teaching.', 'Now it deserves to excel at growing.'],
